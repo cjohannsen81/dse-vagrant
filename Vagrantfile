@@ -26,7 +26,7 @@ apt-get install -q -y curl
 curl -L https://debian.datastax.com/debian/repo_key | sudo apt-key add -
 echo "Configure the first node with opscenter..."
 cat > /etc/apt/sources.list.d/datastax.sources.list <<EOF 
-deb http://christian.johannsen_datastax.com:LMThIODMu0SaOds@debian.datastax.com/enterprise stable main
+deb http://USERNAME:PASSWORD@debian.datastax.com/enterprise stable main
 EOF
 apt-get update 
 apt-get install -q -y dse-full opscenter
@@ -61,7 +61,7 @@ curl -L https://debian.datastax.com/debian/repo_key | sudo apt-key add -
 
 echo "Configure the node..."
 cat > /etc/apt/sources.list.d/datastax.sources.list <<EOF
-deb http://christian.johannsen_datastax.com:LMThIODMu0SaOds@debian.datastax.com/enterprise stable main
+deb http://USERNAME:PASSWORD@debian.datastax.com/enterprise stable main
 EOF
 
 apt-get update
