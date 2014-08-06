@@ -12,7 +12,4 @@ http://www.datastax.com/download/register
 
 Feel free to commit.
 
-Todos:
-- external files for the scripts
-- dynamic variables
 
