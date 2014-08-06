@@ -18,7 +18,6 @@ Vagrant.configure("2") do |config|
         v.customize ["modifyvm", :id, "--memory", val[:memory]]
         v.customize ["modifyvm", :id, "--cpus", val[:cpus] ] 
       config.vm.network :private_network, ip: val[:ip]
-      #config.vm.provision :shell, :inline => "hostname val[:name].to_s"
       config.vm.provision :shell, :inline => "cp -fv /vagrant/hosts /etc/hosts"
       if val[:name] == "dse-node0"
         config.vm.provision :shell, :inline => $master_script
